@@ -1,0 +1,13 @@
+<div id="token-info"></div>
+
+<script>
+    function displayTokenData(data) {
+        document.getElementById("token-info").innerHTML = `
+            <h3>${data.name}</h3>
+            <p>Symbol: ${data.symbol}</p>
+            <p>Market Cap: ${data.market_data.market_cap.usd}</p>
+            <p>Volume: ${data.market_data.total_volume.usd}</p>
+            <p>Contract Address: ${data.contract_address}</p>
+        `;
+    }
+</script>
